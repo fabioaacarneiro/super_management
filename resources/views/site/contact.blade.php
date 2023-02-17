@@ -9,21 +9,21 @@
 
         <div class="page-info">
             <div class="main-contact">
-                <form>
-                    <input type="text" placeholder="Nome" class="black-border">
+                <form action="{{route('site.contact')}}" method="GET">
+                    <input name="name" type="text" placeholder="Nome" class="black-border">
                     <br>
-                    <input type="text" placeholder="Telefone" class="black-border">
+                    <input name="phone" type="text" placeholder="Telefone" class="black-border">
                     <br>
-                    <input type="text" placeholder="E-mail" class="black-border">
+                    <input name="mail" type="text" placeholder="E-mail" class="black-border">
                     <br>
-                    <select class="black-border">
-                        <option value="">Qual o motivo do contato?</option>
-                        <option value="">Dúvida</option>
-                        <option value="">Elogio</option>
-                        <option value="">Reclamação</option>
+                    <select name="contact_reason" class="black-border">
+                        <option value="0">Qual o motivo do contato?</option>
+                        <option value="1">Dúvida</option>
+                        <option value="2">Elogio</option>
+                        <option value="3">Reclamação</option>
                     </select>
                     <br>
-                    <textarea class="black-border">Preencha aqui a sua mensagem</textarea>
+                    <textarea name="message" class="black-border">Preencha aqui a sua mensagem</textarea>
                     <br>
                     <button type="submit" class="black-border">ENVIAR</button>
                 </form>
