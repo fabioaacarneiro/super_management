@@ -8,7 +8,7 @@ class ContactController extends Controller
 {
     public function contact()
     {
-        var_dump($_GET);
+        var_dump($_POST);
         $title = 'Contato';
         return view("site.contact", compact('title'));
     }
