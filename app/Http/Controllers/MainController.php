@@ -8,6 +8,7 @@ class MainController extends Controller
 {
     public function main()
     {
-        return view("site.main");
+        $title = 'Home';
+        return view("site.main", compact('title'));
     }
 }

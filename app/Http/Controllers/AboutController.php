@@ -8,6 +8,7 @@ class AboutController extends Controller
 {
     public function about()
     {
-        return view("site.about");
+        $title = 'Sobre Nós';
+        return view("site.about", compact('title'));
     }
 }

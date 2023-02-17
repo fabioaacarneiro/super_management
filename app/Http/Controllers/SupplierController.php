@@ -8,6 +8,7 @@ class SupplierController extends Controller
 {
     public function index()
     {
+        $title = 'Fornecedores';
         $suppliers = [
             0 => [
                 'name' => 'Fornecedor 1',
@@ -32,6 +33,6 @@ class SupplierController extends Controller
             ]
         ];
 
-        return view('app.suppliers.index', compact('suppliers'));
+        return view('app.suppliers.index', compact('suppliers', 'title'));
     }
 }

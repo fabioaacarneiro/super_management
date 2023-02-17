@@ -12,9 +12,9 @@ Route::get('/contato', [ContactController::class, 'contact'])->name('site.contac
 Route::get('/login', fn() => 'Login' )->name('site.login');
 
 Route::prefix('/app')->group(function() {
-    Route::get('/clients', fn() => 'Clientes' )->name('app.clients');
-    Route::get('/suppliers', [SupplierController::class, 'index'])->name('app.suppliers');
-    Route::get('/products', fn() => 'products' )->name('app.products');
+    Route::get('/clientes', fn() => 'Clientes' )->name('app.clients');
+    Route::get('/fornecedores', [SupplierController::class, 'index'])->name('app.suppliers');
+    Route::get('/produtos', fn() => 'products' )->name('app.products');
 });
 
 
